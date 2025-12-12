@@ -1,4 +1,10 @@
-import { Card, CardHeader, CardTitle } from "@/components/shadcnui/card";
+import BasicAgeCalculator from "@/components/BasicAgeCalculator";
+import {
+	Card,
+	CardContent,
+	CardHeader,
+	CardTitle,
+} from "@/components/shadcnui/card";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,6 +21,9 @@ const page = () => {
 						Basic Age Calculator
 					</CardTitle>
 				</CardHeader>
+				<CardContent>
+					<BasicAgeCalculator />
+				</CardContent>
 			</Card>
 		</section>
 	);
